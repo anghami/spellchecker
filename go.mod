@@ -1,4 +1,4 @@
-module github.com/f1monkey/spellchecker
+module github.com/anghami/spellchecker
 
 go 1.19
 
