@@ -13,7 +13,7 @@ import (
 
 // maxErrors is not a "max errors" in a word. It is a max diff in bits betweeen the "search word" and a "dictionary word".
 // i.e. one simple symbol replacement (problam => problem ) is a two-bit difference.
-const maxErrors = 2
+const maxErrors = 6
 
 type Doc struct {
 	Word  string
