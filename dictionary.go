@@ -221,6 +221,10 @@ func calcScores(src []rune, candidates []сandidate) []match {
 }
 
 func calcScore(src []rune, candidate []rune, distance int, cnt int) float64 {
+	if len(src) == 0 || len(candidate) == 0 {
+		return 0
+	}
+	
 	mult := math.Log1p(float64(cnt))
 	// if first letters are the same, increase score
 	if src[0] == candidate[0] {
